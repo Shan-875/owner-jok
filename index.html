@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StyleNest - Owner Panel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin: 15px 0;
+      padding: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    .googleform {
+      background-color: #4285F4;
+    }
+
+    a {
+      color: #25D366;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>👑 The Silent Elephant - Owner Panel</h1>
+    <p><strong>Owner Number:</strong> <span style="color:#25D366;">6282877896</span></p>
+
+    <!-- WhatsApp Direct -->
+    <button class="btn whatsapp" onclick="openWhatsApp()">Open WhatsApp Orders</button>
+
+    <!-- Google Form Response Sheet -->
+    <button class="btn googleform" onclick="openGoogleSheet()">View Google Form Responses</button>
+
+    <p><a href="customer.html">← Back to Customer Page</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 The Silent Elephant | Admin Access Only
+  </footer>
+
+  <script>
+    function openWhatsApp() {
+      const number = "6282877896";
+      const url = `https://wa.me/${number}`;
+      window.open(url, "_blank");
+    }
+
+    function openGoogleSheet() {
+      // Replace the URL below with your actual Google Sheets link for responses
+      const sheetURL = "https://docs.google.com/forms/d/e/1FAIpQLSft_53-SpwJp5LLbuqW8Ce2sl1sJifAaTd0dBd1xpq18j4eVg/viewform?usp=header"; 
+      window.open(sheetURL, "_blank");
+    }
+  </script>
+
+</body>
+</html>
